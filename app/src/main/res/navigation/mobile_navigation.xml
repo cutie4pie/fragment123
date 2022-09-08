@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/navigation_exams"
         android:name="com.example.myapplication.ui.exams.ExamsFragment"
-        tools:layout="@layout/fragment_exams"
-        android:label="@string/exams"/>
+        android:label="@string/exams"
+        tools:layout="@layout/fragment_exams" />
 
     <fragment
         android:id="@+id/navigation_grades"

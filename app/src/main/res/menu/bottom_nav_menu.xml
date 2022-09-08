@@ -4,21 +4,16 @@
     <item
         android:id="@+id/navigation_exams"
         android:icon="@drawable/ic_exams"
-        android:title="@string/exams"
-        android:fontFamily="@font/suranna"
-
-        />
+        android:title="@string/exams" />
 
     <item
         android:id="@+id/navigation_grades"
         android:icon="@drawable/ic_grades"
-        android:title="@string/grades"
-        android:fontFamily="@font/suranna"/>
+        android:title="@string/grades" />
 
     <item
         android:id="@+id/navigation_tasks"
         android:icon="@drawable/ic_tasks"
-        android:title="@string/tasks"
-        android:fontFamily="@font/suranna"/>
+        android:title="@string/tasks" />
 
 </menu>

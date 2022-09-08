@@ -1,8 +1,8 @@
 <resources>
 
-    <style name="Theme.MyApplication" parent="Theme.AppCompat.NoActionBar">
+    <style name="Theme.MyApplication" parent="Theme.AppCompat">
 
-        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimary">#514440</item>
         <item name="colorPrimaryVariant">#000000</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
@@ -14,6 +14,7 @@
         <!-- Customize your theme here. -->
         <item name="android:fontFamily">@font/suranna</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
 

@@ -2,12 +2,13 @@ package com.example.myapplication;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import androidx.appcompat.widget.Toolbar;
+
 
 import com.example.myapplication.databinding.ActivityTest1Binding;
 
@@ -32,9 +33,8 @@ public class Test1 extends AppCompatActivity {
         assert navHostFragment != null;
         NavController navController = navHostFragment.getNavController();
 
-
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-        NavigationUI.setupWithNavController(binding.navView, navController);
+        NavigationUI.setupActionBarWithNavController(this, navController,appBarConfiguration);
+        NavigationUI.setupWithNavController(binding.navView,navController);
 
 
 
