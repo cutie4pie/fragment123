@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_test1">Test!</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="exams">EXAMS</string>
+    <string name="grades">GRADES</string>
+    <string name="tasks">TASKS</string>
+</resources>
