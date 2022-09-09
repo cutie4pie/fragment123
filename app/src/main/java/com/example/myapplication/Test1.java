@@ -1,9 +1,13 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
+import android.view.WindowManager;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -35,6 +39,19 @@ public class Test1 extends AppCompatActivity {
 
         NavigationUI.setupActionBarWithNavController(this, navController,appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView,navController);
+
+        setContentView(R.layout.activity_test1);
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        WindowInsetsControllerCompat windowInsetsController =
+                ViewCompat.getWindowInsetsController(getWindow().getDecorView());
+        if (windowInsetsController == null) {
+            return;
+        }
+        windowInsetsController.setAppearanceLightNavigationBars(true);
+        windowInsetsController.setAppearanceLightStatusBars(true);
+
 
 
 
